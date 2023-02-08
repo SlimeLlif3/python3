@@ -19,9 +19,10 @@ for p in range(1,5):
             name = nome
     if sexo == 'F' and idade < 20:
         mulher += 1
-print(f'Ao todo são {mulher} mulheres com menos de 20 anos.')
-print(f'A média de idade do grupo é de {total} anos.')
+
+print(f'A média de idade do grupo é de {total} anos')
 print(f'O homem mais velho tem {maioridade} anos e se chama {name}.')
+print(f'Ao todo são {mulher} mulheres com menos de 20 anos.')
 
     
 
