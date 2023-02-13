@@ -1,16 +1,21 @@
 from random import randint
 print('Sou seu computador...\nAcabei de pensar em um número entre 0 e 10.\nSerá que você consegue adivinhar qual foi ?')
-jogador = int(input('Qual é seu palpite? '))
 pc = randint(0,10)
-print(pc)
-while jogador != pc:    
-    if jogador > pc:
-        menor = int(input('K K K, Informe um valor MENOR seu otário: '))
-    elif menor < pc:
-        maior = int(input('K K K, Informe um valor MAIOR seu otário: '))
+acertou = False
+palpite = 0
 
+while not acertou:
+    jogador = int(input('Qual o seu palpite? '))
+    palpite += 1
+    if jogador == pc:
+        acertou = True
+    else:
+        if jogador < pc:
+            print('Mais... Tente mais uma vez.')
+        elif jogador > pc:
+            print('Menos... Tente mais uma vez.')
+print(f'Acertou com {palpite} tentativas. Parabéns!')
 
-        
 
 
         
