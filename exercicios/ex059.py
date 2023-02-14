@@ -1,5 +1,6 @@
 v1 = int(input('Primeiro valor: '))
 v2 = int(input('Segundo valor: '))
+somou = False
 
 
 print('    [ 1 ] Somar\n    [ 2 ] Multiplicar\n    [ 3 ] Maior\n    [ 4 ] Novos Números\n    [ 4 ] Novos Números')
@@ -17,6 +18,7 @@ while option:
             print(f'Entre {v1} e {v2} o maior valor é {v2}')
     elif option == 4:
         print('Informe os números novamente: ')
-        v1 = int(input())  
+        v1 = int(input('Primeiro valor: '))  
+        v2 = int(input('Segundo valor: '))
 
 print('=-==-==-==-==-==-==-==-==-=')
