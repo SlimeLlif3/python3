@@ -1,9 +1,8 @@
-dis = int(input('Qual é a distância da sua viagem? '))
-print(f'Você está prestes a começar uma viagem de {dis:.1f}Km.')
-if dis <= 200:
-    preço = dis*0.50
+distancia = float(input('Qual é a distância da viagem? '))
+preco = distancia / 2
+promocao = preco * 90/100
+print('Você está prestes a começar uma viagem de {}Km.'.format(distancia))
+if distancia <= 200:
+    print('E o preço da sua passagem será de R${:.2f}'.format(preco))
 else:
-    preço = dis*0.45
-
-print(f'E o preço da sua passagem será de R${preço:.2f}')
-
+    print('E o preço da sua passagem será de R${:.2f}'.format(promocao))

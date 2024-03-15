@@ -1,10 +1,9 @@
-print('='*40)
-print(f'{"10 TERMOS DE UMA PA":^40}')
-print('='*40)
-
-termo = int(input('Primero termo: '))
-razão = int(input('Razão: '))
-
-for c in range(termo, razão*10, razão):
-    print (c, end=' → ')
+print('=' * 30)
+print('     10 TERMOS DE UMA PA')
+print('=' * 30)
+termo = int(input('Primeiro termo: '))
+razao = int(input('Razão: '))
+soma = termo + (10 - 1) * razao
+for c in range(termo, soma + razao, razao):
+    print('{}'.format(c), end=' → ')
 print('ACABOU')

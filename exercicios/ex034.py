@@ -1,7 +1,8 @@
-s = float(input('Qual é o sálario do funcionário? R$' ))
-if s <= 1250:
-    porc = (s*0.15) + s
-else: 
-    porc = (s*0.10) + s
+salario = float(input('Qual é o sálario do funcionário? '))
+aumentoMenor = salario * 110/100
+aumentoMaior = salario * 115/100
 
-print(f'Quem ganhava R${s:.2f} passa a ganhar R${porc:.2f} agora.')
+if salario <= 1250:
+    print('Quem ganhava R${:.2f} passa a ganhar R${:.2f} agora.'.format(salario, aumentoMaior))
+else:
+    print('Quem ganhava R${:.2f} passa a ganhar R${:.2f} agora.'.format(salario, aumentoMenor))

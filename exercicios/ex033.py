@@ -1,20 +1,17 @@
-a = int(input('Primeiro valor: '))
-b = int(input('Segundo valor: '))
-c = int (input('Terceiro valor: '))
+v1 = int(input('Primeiro Valor: '))
+v2 = int(input('Segundo Valor: '))
+v3 = int(input('Terceiro Valor: : '))
 
-#Verificando quem é menor
-menor = a 
-if b < a and b < c:
-    menor = b 
-if c < a and c < b:
-    menor = c
+if v1 < v2 and v1 < v3:
+    print('O menor valor digitado foi {}'.format(v1))
+if v2 < v1 and v2 < v3:
+    print('O menor valor digitado foi {}'.format(v2))
+if v3 < v1 and v3 < v2:
+    print('O menor valor digitado foi {}'.format(v3))
 
-#Verificando quem é maior
-maior = a 
-if b > a and b > c:
-    maior = b
-if c > a and c > b:
-    maior = c
-
-print(f'O menor valor digitado foi {menor}.')
-print(f'O maior valor digitado foi {maior}.')
+if v1 > v2 and v1 > v3:
+    print('O maior valor digitado foi {}'.format(v1))
+if v2 > v1 and v2 > v3:
+    print('O maior valor digitado foi {}'.format(v2))
+if v3 > v1 and v3 > v2:
+    print('O maior valor digitado foi {}'.format(v3))

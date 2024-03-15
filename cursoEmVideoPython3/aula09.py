@@ -1,4 +1,2 @@
-frase = '    Curso em Vídeo Python    '
-print(frase[:21])
-
-print(len(frase.strip))
+frase = 'Curso em Vídeo Python'
+print(frase[3:13])

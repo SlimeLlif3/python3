@@ -1,4 +1,3 @@
-print('Conversor de Celsius para Fahrenheit')
-c = float(input('Informe a temperatura em °C: '))
-f = c*1.8+32
-print(f'A temperatura de {c}°C corresponde a {f}°F!')
+temperatura = float(input('Informe a temperatura em Celsiu: '))
+converte = temperatura * 1.8 + 32
+print('A temperatura de {} Celsius corresponde a {} Fahrenheit!'.format(temperatura, converte))

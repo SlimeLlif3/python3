@@ -1,14 +1,17 @@
-inteiro = int(input('Digite um número inteiro: '))
-escolha = int(input('Escolha uma da bases para conversão:\n[ 1 ] converter para BINÁRIO\n[ 2 ] converter para OCTAL\n[ 3 ] converter para HEXADECIMAL\nSua opção: '))
-
-if escolha == 1:
-    print(f'{inteiro} convertido para BINÁRIO é igual a {bin(inteiro)[2:]}')
-
-elif escolha == 2:
-    print(f'{inteiro} convertido para OCTAL é igual a {oct(inteiro)[2:]}')
-
-elif escolha == 3:
-    print(f'{inteiro} convertido para HEXADECIMAL é igual a {hex(inteiro)[2:]}')    
-
+num = int(input('Digite um número inteiro: '))
+print('Escolha uma das bases para conversão: ')
+print('[ 1 ] Converter para BINÁRIO')
+print('[ 2 ] Converter para OCTAL')
+print('[ 3 ] Converter para HEXADECIMAL')
+option = int(input('Sua opção: '))
+if option == 1:
+    print('{} Convertido para BINÁRIO é igual a {}'.format(num, bin(num) [2:]))
+elif option == 2:
+    print('{} Convertido para OCTAL é igual a {}'.format(num, oct(num) [2:]))
+elif option == 3: 
+    print('{} Convertido para HEXADECIMAL é igual a {}'.format(num, hex(num) [2:]))
 else:
-    print('O número digitado é inválido, por favor digite um número de 1 a 3.')
+    print('Número inválido, digite por favor um número entre 1 e 3')
+
+
+

@@ -1,18 +1,15 @@
-cont = 0
+from datetime import datetime
+atual = datetime.now().year
 maior = 0
 menor = 0
-for i in range(1, 8):
-    cont += 1
-    ano = int(input(f'Em que ano a {cont}ª pessoa nasceu? '))
-    if ano < 2005:
+for c in range(1,8):
+    ano = int(input('Em que ano a {} pessoa nasceu? '.format(c)))
+    if atual - ano >= 18:
         maior += 1
     else:
         menor += 1
-if maior== 1:
-    print(f'Ao todo tivemos {maior} pessoa maior de idade\nE também tivemos {menor} pessoas menores de idade')
-elif menor == 1:
-    print(f'Ao todo tivemos {maior} pessoas maiores de idade\nE também tivemos {menor} pessoa menor de idade')
-else:
-    print(f'Ao todo tivemos {maior} pessoas maiores de idade\nE também tivemos {menor} pessoas menores de idade')
+print('\nAo todo tivemos {} pessoas maiores de idade'.format(maior))
+print('E também tivemos {} pessoas menores de idade'.format(menor))
 
-     
+
+

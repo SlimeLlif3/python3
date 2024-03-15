@@ -1,9 +1,7 @@
-from math import radians, sin, cos, tan
-print('Calculadora de SENO, COSSENO E TANGENTE')
-an = float(input('Digite o ângulo que você deseja: '))
-seno = sin(radians(an))
-print(f'O ângulo de {an} tem o SENO de {seno:.2f}')
-cosseno = cos(radians(an))
-print(f'O ângulo de {an} tem o COSSENO de {cosseno:.2f}')
-tangente = tan(radians(an))
-print(f'O ângulo de {an} tem a TANGENTE de {tangente:.2f}')
+from math import sin, cos, tan, radians
+angulo = float(input('Digite o ângulo que você deseja: '))
+radiante = radians(angulo) 
+seno = sin(radiante)
+cosseno = cos(radiante)
+tangente = tan(radiante)
+print('O ângulo de {} tem o SENO de {:.2f}\nO ângulo de {} tem o COSSENO de {:.2f}\nO ângulo de {} tem a TANGENTE de {:.2f}'.format(angulo, seno, angulo, cosseno, angulo, tangente ))

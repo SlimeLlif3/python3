@@ -1,16 +1,15 @@
-from datetime import date
-atual = date.today().year
-nasci = int(input('Ano de nascimento: '))
-tenho = atual - nasci
-data = (tenho-18) + atual
+from datetime import datetime
+nasceu = int(input('Ano de nascimento: '))
+atual = datetime.now().year
+anos = atual - nasceu
 
-print(f'Quem nasceu em {nasci} tem {tenho} anos em {atual}.')
-
-if tenho < 18:
-    print(f'Ainda faltam {18-tenho} anos para o alistamento.\nSeu alistamento será em {data}. ')
-
-elif tenho > 18:
-    print(f'Você já deveria ter se alistado há {tenho-18} anos.\nSeu alistamento foi em {atual-(tenho-18)}.')
-
+if anos < 18:
+    falta = 18 - anos
+    sera = falta + atual
+    print('Quem nasceu em {} tem {} anos em {}.\nAinda faltam {} anos para o alistamento militar.\nSeu alistamento será em {}.'.format(nasceu, anos, atual, falta, sera))
+elif anos > 18:
+    passou = anos - 18
+    foi = atual - passou
+    print('Quem nasceu em {} tem {} anos em {}.\nVocê já deveria ter se alistado há {} anos.\nSeu alistamento foi em {}.'.format(nasceu, anos, atual, passou, foi))
 else:
-    print('Você tem que se alistar IMEDIATAMENTE!')
+    print('Quem nasceu em {} tem {} anos em {}.\nVocê se alista esse ano, boa sorte K K K.'.format(nasceu, anos, atual))

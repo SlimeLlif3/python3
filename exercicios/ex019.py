@@ -1,9 +1,9 @@
 from random import choice
-print('Sorteio de nome')
-a1 = input('Primeiro nome: ')
-a2 = input('Segundo nome: ')
-a3 = input('Terceiro nome: ')
-a4 = input('Quarto Aluno: ')
-lista = [a1,a2,a3,a4]
+n1 = input('Primeiro nome: ')
+n2 = input('Segundo nome: ')
+n3 = input(' Terceiro nome; ')
+n4 = input('Quarto nome: ')
+ale = [n1, n2, n3, n4]
+escolha = choice(ale)
 
-print(f'O aluno escolhido foi {choice(lista)}')
+print('O aluno escolhido foi {}'.format(escolha))

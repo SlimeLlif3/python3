@@ -1,10 +1,7 @@
-soma = 0 
-cont = 0 
-for i in range(1,501, 2):
-    if i % 3 == 0:
-        cont += 1
-        soma += i
-print(f'A soma de todos os {cont} valores solicitados é {soma}')
-
-
-
+contador = 0
+soma = 0
+for c in range (3, 500, 6):
+        contador += 1
+        soma += c
+print('A soma de todos os {} valores solicitados é {}'.format(contador, soma))
+       

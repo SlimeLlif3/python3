@@ -1,10 +1,8 @@
 casa = float(input('Valor da casa: R$'))
 salario = float(input('Salário do comprador: R$'))
 anos = int(input('Quantos anos de financiamento? '))
-prestacao = (casa/anos)/12
-
-if prestacao <= salario*0.30:
-    print(f'Para pagar uma casa de R${casa:.2f} em {anos} anos a prestação será de R${prestacao:.2f}\nEmpréstimo pode ser CONCEDIDO!')
+parcela = casa / (12 * anos)
+if parcela >= salario * 30 / 100:
+    print('Para pagar uma casa de R${:.2f} em {} anos a prestação será de R${:.2f}\nEmpréstimo NEGADO'.format(casa, anos, parcela))
 else:
-    print(f'Para pagar uma casa de R${casa:.2f} em {anos} anos a prestação será de R${prestacao:.2f}\nEmpréstimo NEGADO!')
-
+    print('Para pagar uma casa de R${:.2f} em {} anos a prestação será de R${:.2f}\nEmspréstimo CONCEDIDO'.format(casa, anos, parcela))
